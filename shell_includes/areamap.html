@@ -1,0 +1,92 @@
+<div id="area-map">
+    <a class="close" href="#">close</a>
+    <div id="map_container">
+	    <input type="text" placeholder="Search Areas" id="map_search_areas">
+	    <input type="text" placeholder="Search Destinations" id="map_search_destinations">
+	    <input type="text" placeholder="Search Directions" id="map_search_directions">
+	    <div id="sidebar">
+		    <ul id="map_tabs">
+			    <li id="map_tab_destinations">Categories</li>
+			    <li id="map_tab_areas">Areas</li>
+			    <li id="map_tab_directions">Directions</li>
+		    </ul>
+
+		    <!-- Begin Areas Tab -->
+		    <div id="map_areas_list">
+			    <div class="header"></div>
+		    </div>
+		    <!-- End Areas Tab #map_areas_list -->
+
+		    <!-- Begin Destinations Tab -->
+		    <div id="map_destination_filters">
+			    <div class="header"></div>
+			    <div class="sidebar-wrapper">
+				    <ul class="filters">
+					    <li><div class="section active"><div class="things-to-do">What to Do</div></div>
+    <ul>
+<li><label for="Attractions"><input type="checkbox" name="cat1" value="e413d510-3885-42bf-9850-a30945ef82b1">Attractions</label></li>
+<li><label for="Beaches"><input type="checkbox" name="cat1" value="1dbc9f16-335b-45f0-9654-67fd2ca83491">Beaches</label></li>
+<li><label for="Casinos"><input type="checkbox" name="cat1" value="c1e81af2-b073-4c41-9a86-28791025e44f">Casinos</label></li>
+<li><label for="Cruises from San Diego"><input type="checkbox" name="cat1" value="5bca971e-c940-4230-8ff5-24ed08a9764a">Cruises from San Diego</label></li>
+<li><label for="Parks &amp; Gardens"><input type="checkbox" name="cat1" value="791173d2-c26e-4871-b7fd-62a2b293ca69">Parks &amp; Gardens</label></li>
+<li><label for="Shopping"><input type="checkbox" name="cat1" value="e2a43db6-b04e-472a-81b5-b208abc1b7a2">Shopping</label></li>
+<li><label for="Spas"><input type="checkbox" name="cat1" value="cd9443b0-e3ea-4cda-9782-b97989c8d247">Spas</label></li>
+<li><label for="Sports &amp; Recreation"><input type="checkbox" name="cat1" value="17f9e468-39e4-4984-b86e-928672622b52">Sports &amp; Recreation</label></li>
+<li><label for="Tours &amp; Sightseeing"><input type="checkbox" name="cat1" value="3f4242d5-a15e-4a81-8e58-9891a6fe3b69">Tours &amp; Sightseeing</label></li>
+    </ul>
+</li>
+<li><div class="section active"><div class="dining">Dining and Nightlife</div></div>
+    <ul>
+<li><label for="Dining &amp; Nightlife"><input type="checkbox" name="cat2" value="11d212ef-e061-40f2-84d6-a98077cccf34">Dining &amp; Nightlife</label></li>
+    </ul>
+</li>
+<li><div class="section active"><div class="places-to-stay">Where to Stay</div></div>
+    <ul>
+<li><label for="Where to Stay"><input type="checkbox" name="cat3" value="da614c30-aa2b-492b-96be-07bd5ea65754">Where to Stay</label></li>
+    </ul>
+</li>
+
+				    </ul>
+			    </div>
+		    </div>
+		    <!-- End Destinations Tab #map_destination_filters -->
+
+		    <!-- Begin Directions Tab -->
+		    <div id="map_directions" class="empty">
+			    <div class="header"></div>
+			    <div class="sidebar-wrapper">
+				    <div class="directions">
+					    <div id="reverse-directions"><a href="javascript:void(0);" title="Reverse Directions">Reverse Directions</a></div>
+					    <label for="directions-start" class="circle-a">
+						    <input type="text" id="directions-start" tabindex="1">
+						    <a class="remove" href="javascript:void(0);" title="Clear location">×</a>
+					    </label>
+					    <label for="directions-end" class="circle-b">
+						    <input type="text" id="directions-end" tabindex="2">
+						    <a class="remove" href="javascript:void(0);" title="Clear location">×</a>
+					    </label>
+				    </div>
+				    <div class="buttons">
+					    <a class="button" href="javascript:void(0);" title="Print" id="print-directions">Print</a>
+					    <a class="button" href="javascript:void(0);" title="Get Directions" id="get-directions">Get Directions</a>
+				    </div>
+
+				    <div id="directions-error"></div>
+
+				    <div id="destination-text">
+					    <table>
+						    <tbody><tr>
+							    <td>Driving Directions to <span class="destination"></span></td>
+						    </tr>
+					    </tbody></table>
+				    </div>
+				    <div id="directions-display"></div>
+			    </div>
+            </div>
+		    <!-- End Directions Tab #map_directions -->
+	    </div>
+	    <div id="map_canvas-wrapper">
+		    <div id="map_canvas"></div> <!-- end of div#map_canvas -->
+	    </div>
+    </div><!-- end of div#map_container -->
+</div>
