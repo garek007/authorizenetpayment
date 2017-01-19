@@ -4,7 +4,7 @@ require 'anet/autoload.php';
 define("AUTHORIZENET_API_LOGIN_ID", "");
 define("AUTHORIZENET_TRANSACTION_KEY", "");
 
-define("AUTHORIZENET_MD5_SETTING", "pete");
+define("AUTHORIZENET_MD5_SETTING", "");
 $message = new AuthorizeNetSIM;
 if ($message->isAuthorizeNet()) {
     $transactionId = $message->transaction_id;
